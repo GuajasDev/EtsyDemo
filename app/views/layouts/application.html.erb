@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EtsyDemo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'layouts/header' %>	<!--If you want to show the contents of another file as html you need to save that file with an _ at the beginning and then use the tags <%= %>. If you want to use it but not show it, use <% %> -->
+
+<div class="container">
+	<%= yield %>
+
+	<%= render 'layouts/footer' %>
+</div>
+
+</body>
+</html>
