@@ -15,7 +15,7 @@ gem "paperclip", "~> 4.2"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
-gem 'stripe'
+gem "stripe"
 
 group :production do
 	gem 'pg'
@@ -28,6 +28,5 @@ group :development, :test do
 	gem 'sqlite3'
   	gem 'byebug'
   	gem 'web-console', '~> 2.0'
-  	gem 'spring'
 end
 
